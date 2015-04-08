@@ -1,0 +1,98 @@
+###################################
+## NOTES TO WHOMEVER  USES  THIS ##
+THE IMPLEMENTED MAKE FUNCTIONS ARE:
+
+make clean: Called in all others,
+			Removes .gch files and
+			source / a.out files.
+
+make test_clang: Compiles test.cpp
+			and tsearch.h with clang.
+			Also calls make clean.
+
+make good_clang: Compiles good.cpp
+			and tsearch.h with clang.
+			Also calls make clean.
+
+make prod_clang: Compiles main.cpp
+			and tsearch.h with clang.
+			Also calls make clean.
+
+make test_gcc: Same as test_clang,
+			except uses GCC/G++ to
+			support systems without
+			clang (polaris...)
+
+make good_gcc: Same as good_clang,
+			except uses GCC/G++ to
+			support systems without
+			clang (polaris...)
+
+make prod_gcc: Same as prod_clang,
+			except uses GCC/G++ to
+			support systems without
+			clang (polaris...)
+
+
+
+## THE DIFFERENCE BETWEEN GOOD,  ##
+## TEST AND PROD VERSIONS OF HW6 ##
+
+Good:
+	'Good' allows the user to input
+	their own array for use with the
+	ternary search.
+
+Test:
+	'Test' uses two predefined arrays
+	just as proof of concept to prove
+	that the ternary search is viable.
+	The two arrays are (in order) a
+	random set of 10 integers that I
+	put into array1. The other array
+	contains the first 100 primes.
+
+Prod:
+	'Prod' uses stdlib.h's standard
+	random number generation to make
+	an array of fixed size, populated
+	with random numbers. It then sorts
+	with <algorithm>'s standard sort
+	function. Then uses ternary sort
+	on the array.
+
+### HW6 CHANGELOG ###
+## 4/5/15 12:35 AM
+The Assignment has been started...
+
+## 4/5/15 3:22 AM
+I have completed the first version of
+this project, which, instead of using a
+binary search algorithm (bi == 2), uses
+a ternary search algorithm, splitting 
+the array into 3 (tri == 3) segments.
+
+## 4/6/15 8:07 PM
+I have added the 'good' option, with
+a main.cpp that, instead of using pre-
+defined arrays, asks the user for any
+pre-sorted array of integers.
+
+## 4/7/15 12:31 PM
+Due to polaris' not having clang++,
+I have added make options for using
+g++ instead of clang for compiling.
+
+## 4/7/15 2:21 PM
+I have implemented the 'prod' option,
+which uses a random number generator
+to populate an array (defaults to a 
+size of 100), and run ternary search
+on the array.
+
+## 4/7/15 2:38 PM
+Debugging finished.Pprogram compiles
+without error. All features are fully
+functional and working as intended.
+
+#####################################
