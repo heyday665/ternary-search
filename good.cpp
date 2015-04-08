@@ -18,14 +18,14 @@ int main(){
 		cout << "Please enter value for element " << i << ": ";                         // Creation of
 		cin >> tmp;                                                                     // User Defined
 		if (i == 0){                                                                	// input array
-			array[i] = tmp;                                                             //
+			array[i] = tmp;                                                         //
 		}                                                                               //
 		else if (tmp < array[i-1]){                                                     //
-        	cerr << "The value entered is less than the previous value!" << endl;       //
-			exit(1);                                                                    //
+        	cerr << "The value entered is less than the previous value!" << endl;           //
+			exit(1);                                                                //
 		}                                                                               //
 		else {                                                                          //
-			array[i] = tmp;                                                             //
+			array[i] = tmp;                                                         //
 		}																			  //
 	}																				//
 
