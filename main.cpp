@@ -13,7 +13,7 @@ int main(){
 		srand(time(NULL)+i);
 		tmp = rand()%1000;
 		array[i] = tmp;
-		cerr << "Value--> " << array[i] << endl; //Can uncomment to add someuseful debug messaging, and to know what values have been stored.
+		cerr << "Value--> " << array[i] << endl;
 	}
 	sort(array,array+ARRAYSIZE);
 
