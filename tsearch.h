@@ -3,6 +3,12 @@
 #include <iostream>
 using namespace std;
 
+//Recursive searching function, based
+//loosely off of the idea of binary
+//searching algorithms. The difference
+//should be fairly obvious.
+
+//Takes in array, left and right bounds, and a target
 int ternarysearch(int *a, int left, int right, int target){
 	int mid1 = left + (right - left)/3;
 	int mid2 = left + 2*(right - left)/3;
